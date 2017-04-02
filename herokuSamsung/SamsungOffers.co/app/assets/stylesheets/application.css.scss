@@ -1,0 +1,158 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@font-face{
+		font-family: 'SamsungOne800';
+  src: asset-url('SamsungOne-800_v1.0.ttf');
+
+}
+
+@font-face{
+		font-family: 'SamsungOne700';
+  src: asset-url('SamsungOne-700_v1.0.ttf');
+
+}
+
+@font-face{
+		font-family: 'SamsungOne600';
+  src: asset-url('SamsungOne-600_v1.0.ttf');
+
+}
+
+@font-face{
+		font-family: 'SamsungOne300';
+  src: asset-url('SamsungOne-300_v1.0.ttf');
+
+}
+
+@font-face{
+		font-family: 'SamsungOne200';
+  src: asset-url('SamsungOne-200_v1.0.ttf');
+
+}
+
+
+
+.center {
+	display: table;
+  	margin: 0 auto;
+}
+
+#logoPng {
+	height: 60px;
+	width: 120px;
+	margin-bottom: 7px;
+	margin-top: 7px;
+}
+
+.snap {
+	font-family: 'SamsungOne800';
+	font-size: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.snapchat {
+	display: table;
+  	margin: 0 auto;
+  	position: relative;
+  	bottom: 80px; 
+}
+
+.mainText {
+	background-color: rgb(220,57,179);
+	width: 100%;
+	margin-top: 45px;
+}
+
+.offerText {
+	font-family: 'SamsungOne700';
+	color: white;
+	font-size: 100px;
+	font-weight: bold;
+	margin-left: 60px;
+	position: relative;
+	bottom: 30px;
+}
+
+.codeBox {
+	position: relative;
+	top: 100px;
+}
+
+#code {
+	margin-left: 60px;
+	font-family: 'SamsungOne300';
+	font-size: 40px;
+	color: white;
+	padding-bottom: 10px;
+}
+
+.codeText {
+	margin-left: 60px;
+	font-family: 'SamsungOne300';
+	font-size: 40px;
+	background-color: white;
+	display: inline;
+	color: black;
+	padding: 5px;
+}
+
+#IconPng {
+	position: relative;
+	bottom: 100px;
+	left: 480px;
+	height: 450px;
+	width: 450px;
+}
+
+#StickerPng {
+	position: relative;
+	right: 145px;
+	bottom: 240px;
+	height: 450px;
+	width: 450px;
+}
+
+
+
+.instructions {
+	font-family: 'SamsungOne300';
+	color: #D3D3D3;
+	font-size: 15px;
+	margin-left: 60px;
+	position: relative;
+	bottom: 120px;
+}
+
+.lastText {
+	margin: 0px;
+	background-color: black;
+}
+
+.rescan {
+	font-family: 'SamsungOne700';
+	font-size: 78px;
+	color: white;
+	margin-left: 65px;
+	margin-right: 65px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	float: center;
+}
+
+#deals {
+	text-decoration: underline;
+}

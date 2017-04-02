@@ -1,0 +1,148 @@
+<nav class="navbar">
+    <div class="navbar-header">
+     	<!-- <div class="navbar-hamburger">
+     		<img id="hamburger" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png"> 
+     	</div> -->
+		<div class="navbar-logos">
+        	<img id="logoPng" src="https://s3.amazonaws.com/uncoveredpictures/ouzi/TCC_Logo.png">
+    	</div>
+    </div> 
+</nav>
+
+<h1>Snap it up.</h1>
+
+<div class= "offerText">7 days of offers! Visit one of the locations below to <br> take advantage of today's in-store offer</div>
+
+<br> <br>
+
+<div style="font-weight: bold; font-size: 16px; padding-left: 2px;">
+	Find a store.
+</div>
+
+
+<%= form_tag @store, :method => :get do %>
+  			<div class="wholeForm">
+    			<%= text_field_tag :search, params[:search], :class => "form", :autofocus => true, :placeholder => "Enter Zip or Address" %>
+    			<%= submit_tag "Search", :class => "btn", :name => nil %>
+    			<!-- <input type="reset" value="Reset Form" /> -->
+  			</div>
+		<% end %>
+<div class="row">
+	<div class="col-md-5">
+		<!-- <form action = "">
+				<input class = "" type = "search" placeholder="Enter Zip or Address">
+				<button class = "">Search</button>
+		</form> -->
+		<!-- <div class="input-group">
+      		<input type="text" class="form-control" placeholder="Enter Zip or Address">
+      		<span class="input-group-btn">
+        		<button class="btn" type="button">Search</button>
+      		</span>
+		</div> -->
+		
+		<!-- <div class="mobileMap">
+			<div id="map">
+		    	MOBILE VERSION OF MAP WILL APPEAR HERE
+		 	</div>
+		</div> -->
+		
+		<br>
+		<div class="storesBox">
+
+			<div>
+				<%@locations.first(5).each do |store|%>
+					<div class="stores">
+						<div id="storeTitle" class="row"> <div id="storeName" class="col-md-9"> Store#<%= store.name%> </div> <div id="distance" class="col-md-3"> 
+								<% if (@search == "none") %>
+
+								<% else %>
+									<%=store.distance_from(@search).round(2)%>mi
+								<% end %>
+							  
+							 </div>
+						</div>
+						<div> <a href="http://maps.google.com/?q=<%=store.address%> <%=store.city%>,<%=store.state%>" target="_blank" id="links"> Directions</a> </div>
+
+						<div id="storeInfo" style="padding-top: 6px;"> <%= store.address %> </div>
+						<div id="storeInfo"> <%= store.city %>, <%= store.state %> <%= store.zip %></div>
+						<div> <a href="tel:<%=store.number%>" id="links" style="font-size: 12px;"> <%= store.number %> </a> </div>
+
+						<div id="storeInfo" style="padding-top: 6px;"> Hours: <%= store.hours %> </div>
+						<div> <a href="http://www.verizonwireless.com/?intcmp=VZ-GHOME-D-WIRELESS” onclick="trackOutboundLink('http://www.verizonwireless.com/?intcmp=VZ-GHOME-D-WIRELESS'); return false;" target="_blank" id="links" style="font-size: 12px;"> See Store page </a> </div>
+							<br>
+							<br>
+					</div>
+				<% end %>
+			</div>
+		</div>
+
+	</div> <!-- END OF LIST OF STORES COLUMN -->
+
+	<div class="col-md-7">
+		<div id="map">
+		<!-- THE MAP GOES HERE -->  			
+    	</div>
+	</div>
+<script>
+		      function initMap() {
+		      	<%if !@firstLocation.nil?%>
+		      	var first = {lat: <%= @firstLocation.lat %>, lng: <%= @firstLocation.lng %>};
+		      	<%end%>
+		      	<%if !@secondLocation.nil?%>
+		      	var second = {lat: <%= @secondLocation.lat %>, lng: <%= @secondLocation.lng %>};
+		      	<%end%>
+		      	<%if !@secondLocation.nil?%>
+		      	var third = {lat: <%= @thirdLocation.lat %>, lng: <%= @thirdLocation.lng %>};
+		      	<%end%>
+		      	<%if !@secondLocation.nil?%>
+		      	var fourth = {lat: <%= @fourthLocation.lat %>, lng: <%= @fourthLocation.lng %>};
+		      	<%end%>
+		      	<%if !@secondLocation.nil?%>
+		      	var fifth = {lat: <%= @fifthLocation.lat %>, lng: <%= @fifthLocation.lng %>};
+		       	<%end%>
+		       	var map = new google.maps.Map(document.getElementById('map'), {
+		       		zoom: 9,
+		       		center: first
+		       	});
+		       				<%if !@firstLocation.nil?%>
+				        	var marker = new google.maps.Marker({
+ 								position: first,
+ 								animation: google.maps.Animation.DROP,
+ 								map: map,
+				        	});
+				        	<%end%>
+				        	<%if !@secondLocation.nil?%>
+				        	var marker = new google.maps.Marker({
+ 								position: second,
+ 								animation: google.maps.Animation.DROP,
+ 								map: map,
+				        	});
+				        	<%end%>
+				        	<%if !@thirdLocation.nil?%>
+				        	var marker = new google.maps.Marker({
+ 								position: third,
+ 								animation: google.maps.Animation.DROP,
+ 								map: map,
+				        	});
+				        	<%end%>
+				        	<%if !@fourthLocation.nil?%>
+				        	var marker = new google.maps.Marker({
+ 								position: fourth,
+ 								animation: google.maps.Animation.DROP,
+ 								map: map,
+				        	});
+				        	<%end%>
+				        	<%if !@fifthLocation.nil?%>
+				        	var marker = new google.maps.Marker({
+ 								position: fifth,
+ 								animation: google.maps.Animation.DROP,
+ 								map: map,
+				        	});
+				        	<%end%>
+		      }
+    		</script>
+    		<script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHkiWbFvAgbpAry3pAyir2MdKmW-dvywQ
+		&callback=initMap">
+    </script>
+</div>

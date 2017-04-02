@@ -1,0 +1,232 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@font-face{
+	font-family: 'SamsungOne800';
+	src: asset-url('SamsungOne-800_v1.0.ttf');
+}
+
+@font-face{
+	font-family: 'SamsungOne700';
+	src: asset-url('SamsungOne-700_v1.0.ttf');
+}
+
+@font-face{
+	font-family: 'SamsungOne600';
+	src: asset-url('SamsungOne-600_v1.0.ttf');
+}
+
+@font-face{
+	font-family: 'SamsungOne300';
+	src: asset-url('SamsungOne-300_v1.0.ttf');
+}
+
+@font-face{
+	font-family: 'SamsungOne200';
+	src: asset-url('SamsungOne-200_v1.0.ttf');
+}
+
+
+
+body {
+	margin: auto;
+	padding-right: 80px;
+	padding-left: 80px;
+}
+
+h1 {
+	font-family: "SamsungOne800";
+	color: #1428a0;
+	font-size: 65px;
+	font-weight: 300;
+	padding-top: 13px;
+}
+
+.navbar {
+	border-bottom: solid thin #F5F5F5;
+	border-bottom-opacity: 0.1; 
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.navbar-logos{
+	position: absolute;
+	top: 0;
+	right: 0;
+	// padding-top: 13px;
+}
+
+.navbar-hamburger{
+	padding-top: 12px;
+	left: 0;
+}
+
+#hamburger {
+	height: 30px;
+	width: 35px;
+}
+
+#logoPng {
+	height: 45px;
+	width: 110px;
+	margin-top: 10px;
+}
+
+.offerText {
+	padding-top: 10px;
+	font-family: "SamsungOne600";
+	font-size: 20px;
+}
+
+.form {
+	background-color: #F5F5F5;
+	font-family: "SamsungOne300";
+	width: 350px;
+	height: 39px;
+	padding-left: 10px;
+	border-radius: 0px thin;
+	border: thin solid #D3D3D3;
+}
+
+.btn {
+	background-color: #1428a0;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	border-width: 3.8px;
+	border-radius: 0px;
+	position: relative;
+	right: 5px;
+	bottom: 1px;
+	right: 24px;
+	top: 0px;
+}
+
+.filters {
+	width: 300px;
+	padding-left: 2px;
+	border-bottom: solid thin #1428a0;
+}
+
+li {
+	list-style: none;
+}
+
+.stores {
+	padding-left: 2px;	
+	border-bottom: solid thin #A9A9A9;
+	border-top: solid thin #F5F5F5;
+	padding-top: 6px;
+	padding-left: none;
+}
+
+#links {
+	font-family: "SamsungOne600";
+	font-size: 15px;
+	color: #1428a0;
+	font-weight: bolder;
+
+}
+
+#storeTitle {
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+#storeName {
+	float: left;
+}
+#distance {
+	float: left;
+}
+
+#storeInfo {
+	font-family: "SamsungOne300";
+	font-size: 15px;
+	opacity: 0.5;
+}
+
+.storesBox {
+	height: 500px;
+	width: 420px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-bottom: 10px;
+}
+
+.mobileMap {
+	display: none;
+}
+
+#map {
+    height: 500px;
+    width: auto;
+}
+
+// @media only screen
+// and (max-width: 450px) {
+// 	margin:5px;
+// 	background-color: #A9A9A9;
+// 	font-size: 15px;
+// 	font-weight: 300;
+// 	margin-left: 12px;
+// 	padding: 0 11px 0 13px;
+// 	text-overflow: ellipsis;
+// 	width: 140px;
+// }
+
+@media only screen and (max-width: 1228px) {
+	body {
+		margin: auto;
+		width: auto;
+	}
+
+	.form {
+		width: 89%;
+	}
+
+	.storesBox {
+		width: 100%;
+		height: 500px;
+		overflow-y: scroll;
+		padding-top: 5px;
+		border-top: solid normal #A9A9A9;
+	}
+
+	#storeInfo {
+		font-family: 'SamsungOne800';
+	}
+
+	.col-md-push-7 {
+    	left: 66.66666667%;
+  	}
+	
+  	
+  	.col-md-pull-5 {
+    	right: 33.33333333%;
+  	}
+
+	#map {
+    	width: 100%;
+    }
+
+	.offerText{
+		display: none;
+	}
+
+	.wholeForm {
+		padding-bottom: 20px;
+	}
+}
