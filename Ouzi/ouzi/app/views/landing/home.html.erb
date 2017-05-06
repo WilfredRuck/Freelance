@@ -1,0 +1,54 @@
+<div id="load" class="load">
+  <div>L</div>
+  <div>O</div>
+  <div>A</div>
+  <div>D</div>
+  <div>I</div>
+  <div>N</div>
+  <div>G</div>
+</div>
+
+<!-- <div class="loader"></div> NEW PAGE LOADER  --> 
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-12">
+    	<div class="logo originalLogo"></div>
+      <div> <%= render 'partials/landingNav' %> </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- BURGER TOGGLE & LOGO TRANSFORMATION - JAVASCRIPT -->
+<script> 
+ $('#toggle').click(function() {
+
+    var b = document.querySelector('.bodyEdits');
+    var p = document.querySelector('.logo');
+
+   $(this).toggleClass('active');
+   
+   $('#overlay').toggleClass('open');
+   $('#overlay').toggleClass('closed');
+
+      if ($('#overlay').hasClass('open')){	//when menu is open
+        $(b).css("background-color", "black").fadeIn(3000);
+        $(b).removeClass('bodyColor');
+
+        $(p).addClass('menuOpenLogo');
+        $(p).removeClass('originalLogo');
+
+      };
+      if ($('#overlay').hasClass('closed')){  //when menu is closed
+        $(b).css("background-color", "white");
+        $(b).addClass('bodyColor');
+
+        $(p).removeClass('menuOpenLogo');
+        $(p).addClass('originalLogo');
+      };
+  });
+</script>

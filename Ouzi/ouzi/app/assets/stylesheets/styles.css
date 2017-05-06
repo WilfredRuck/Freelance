@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn|Roboto|Raleway');
+
+
+.bodyColor{
+	background-color: white;
+}
+
+.blackBody {
+	background-color: black;
+	height: 100vh;
+}
+
+.originalLogo {
+	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/newLogo.png");
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.menuOpenLogo {
+	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/white1.png");
+	position: relative;
+	float: center;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*.landingImage {*/
+	/*text-align: center;
+	position: relative;
+	top: 50px;
+/*	line-height: .7;
+*/	/*font-size: 350px;
+    color: transparent;    
+    background: url(smoke.jpg) center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+
+.displayNone{
+	display: none;
+}
+
+#overlay {
+	position: absolute;
+	z-index: 3;
+	height: 100vh;
+}
+
+.btn-sm {
+	position: relative;
+	z-index: 4;
+}
+
+.magazineImage {
+	padding-top: 50px;
+	height: 425px;
+	width: 950px;
+}
