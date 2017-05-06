@@ -22,9 +22,13 @@
 
 .menuOpenLogo {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/white1.png");
-	position: relative;
-	float: center;
-	height: 100vh;
+	display: block;
+    margin: auto;
+    height:40%;
+    width: 40%;
+	height: 700px;
+	width: 700px;
+	position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
