@@ -21,8 +21,9 @@ body {
   position: relative;
   text-align: right;
   color: #FF5252;
-  text-decoration: none;
-  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  font-size: 12px;
   overflow: hidden;
   top: 5px;
 }
@@ -39,9 +40,11 @@ body {
   -webkit-transition: .35s ease;
   transition: .35s ease;
 }
-.container a:hover:after, .container a:focus:after, .container a:active:after {
+
+/*UNDERLINES ON HOVER*/
+/*.container a:hover:after, .container a:focus:after, .container a:active:after {
   width: 100%;
-}
+}*/
 
 h1 {
   position: relative;
@@ -94,9 +97,7 @@ h1 {
   top: 0;
   right: 0;
   padding-top: 5%;
-  padding-right: 200px;
-  width: 10%;
-  height: 0%;
+  padding-right: 30px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .35s, visibility .35s, height .35s;
@@ -133,7 +134,7 @@ h1 {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 10px;
-  font-weight: 400;
+  font-weight: bolder;
   text-align: right;
   z-index: 5;
 }
@@ -164,7 +165,7 @@ h1 {
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
-    left: 100%;
+    left: 1%;
   }
   100% {
     opacity: 5;
@@ -175,7 +176,7 @@ h1 {
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    left: 100%;
+    left: 1%;
   }
   100% {
     opacity: 5;
