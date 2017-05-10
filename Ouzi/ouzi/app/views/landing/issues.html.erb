@@ -23,15 +23,16 @@
    $('#overlay').toggleClass('closed');
 
       if ($('#overlay').hasClass('open')){	//when menu is open
-        $( "#menuFade" ).fadeTo( "slow" , 1.8, function() {
-    		// Animation complete.
-  		});
-      };
+        
+        $("body").animate({
+          backgroundColor: "#FFDF00"
+        }, 1000 );
+      }
 
       if ($('#overlay').hasClass('closed')){  //when menu is closed
-        $( "#menuFade" ).fadeTo( "slow" , 1.0, function() {
-    		// Animation complete.
-    	});
+        $("body").animate({
+          backgroundColor: "white"
+        }, 1000 );
   	  };
  });
 </script>
