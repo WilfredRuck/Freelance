@@ -2,6 +2,7 @@
 	<div class="container" id="menuFade">
 	  <div class="row">
 	    <div class="col-md-12">
+	    	<a href="/"><button>Home</button></a>
 	      <div> <%= render 'partials/landingNav' %> </div>
 	    </div>
 	  </div>
@@ -26,13 +27,15 @@
         
         $("body").animate({
           backgroundColor: "#FFDF00"
-        }, 1000 );
+        }, 500 );
       }
 
       if ($('#overlay').hasClass('closed')){  //when menu is closed
+        
         $("body").animate({
           backgroundColor: "white"
-        }, 1000 );
+        }, 500 );
   	  };
+
  });
 </script>
