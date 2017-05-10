@@ -19,7 +19,7 @@ body {
 .container a {
   display: inline-block;
   position: relative;
-  text-align: center;
+  text-align: right;
   color: #FF5252;
   text-decoration: none;
   font-size: 20px;
