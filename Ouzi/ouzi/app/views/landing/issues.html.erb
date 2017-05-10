@@ -1,0 +1,37 @@
+<body class="issues">
+	<div class="container" id="menuFade">
+	  <div class="row">
+	    <div class="col-md-12">
+	      <div> <%= render 'partials/landingNav' %> </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+
+
+
+
+
+
+<!-- BURGER TOGGLE - JAVASCRIPT -->
+<script> 
+ $('#toggle').click(function() {
+
+   $(this).toggleClass('active');
+   
+   $('#overlay').toggleClass('open');
+   $('#overlay').toggleClass('closed');
+
+      if ($('#overlay').hasClass('open')){	//when menu is open
+        $( "#menuFade" ).fadeTo( "slow" , 1.8, function() {
+    		// Animation complete.
+  		});
+      };
+
+      if ($('#overlay').hasClass('closed')){  //when menu is closed
+        $( "#menuFade" ).fadeTo( "slow" , 1.0, function() {
+    		// Animation complete.
+    	});
+  	  };
+ });
+</script>
