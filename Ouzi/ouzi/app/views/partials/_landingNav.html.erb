@@ -9,9 +9,9 @@
 <div class="overlay closed" id="overlay">
   <nav class="overlay-menu">
     <ul>
-      <li> <a href="/book">READ</a> </li>
+      <li> <%= link_to 'READ', "/", method: :get %> </li>
       <li> <a href="/">EVENTS</a> </li>
-      <li> <a href="/issues">ARTISTS</a> </li>
+      <li> <%= link_to 'ARTISTS', issues_path, method: :get %> </li>
       <li> <a href="/">ABOUT OUZI</a> </li>
       <li> <a href="/">SUBMISSIONS</a> </li>
       <li> <a href="/">RESOURCES</a> </li>
