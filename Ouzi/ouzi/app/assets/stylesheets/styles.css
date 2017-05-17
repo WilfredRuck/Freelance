@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Roboto|Raleway');
 
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
 .bodyColor{
 	background-color: white;
@@ -76,30 +79,47 @@
 }
 
 .issueDiv {
-	height: 300px;
-	width: 430px;
+	height: 400px;
+	width: 500px;
+	color: white;
+	font-size: 55px;
+	font-weight: bolder;
+	text-shadow: 2px 2px #000000;
 }
 
 .issue1 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/websitephoto.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: relative;
+	top: 400px;
+	z-index: 50;
 }
 
 .issue2 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/blackking.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: relative;
+	left: 300px;
+	z-index: 40;
+
 }
 
 .issue3 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/man.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 30;	
 }
 
 .issue4 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/stairs.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: relative;
+	left: 300px;
+	bottom: 400px;
+	z-index: 20;
 }

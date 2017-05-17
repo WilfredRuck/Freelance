@@ -38,16 +38,18 @@
    $('#overlay').toggleClass('closed');
 
       if ($('#overlay').hasClass('open')){	//when menu is open
-        $(b).css("background-color", "black").fadeIn(3000);
-        $(b).removeClass('bodyColor');
+        $("body").animate({
+          backgroundColor: "#000000"
+        }, 300 );
 
         $(p).addClass('menuOpenLogo');
         $(p).removeClass('originalLogo');
 
       };
       if ($('#overlay').hasClass('closed')){  //when menu is closed
-        $(b).css("background-color", "white");
-        $(b).addClass('bodyColor');
+        $("body").animate({
+          backgroundColor: "#FFFFFF"
+        }, 300 );
 
         $(p).removeClass('menuOpenLogo');
         $(p).addClass('originalLogo');
