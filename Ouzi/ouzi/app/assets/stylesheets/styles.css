@@ -70,18 +70,36 @@
 	background-color: white;
 }
 
+.floatIssues {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.issueDiv {
+	height: 300px;
+	width: 430px;
+}
+
 .issue1 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/websitephoto.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .issue2 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/blackking.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .issue3 {
-	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/man.jpg");	
+	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/man.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;	
 }
 
 .issue4 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/stairs.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
