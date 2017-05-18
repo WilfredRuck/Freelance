@@ -74,18 +74,30 @@ body {
 }
 
 .floatIssues1 {
-	width: 50%;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .floatIssues2 {
-	width: 50%;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .floatIssues3 {
-	width: 50%;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .issueDiv {
@@ -95,6 +107,7 @@ body {
 	font-size: 100px;
 	font-weight: bolder;
 	text-shadow: 2px 2px #000000;
+	user-select: none;
 }
 
 .issue1 {
