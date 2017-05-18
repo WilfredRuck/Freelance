@@ -73,7 +73,17 @@ body {
 	background-color: white;
 }
 
-.floatIssues {
+.floatIssues1 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.floatIssues2 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.floatIssues3 {
 	width: 50%;
 	margin: 0 auto;
 }
@@ -82,7 +92,7 @@ body {
 	height: 400px;
 	width: 500px;
 	color: white;
-	font-size: 55px;
+	font-size: 100px;
 	font-weight: bolder;
 	text-shadow: 2px 2px #000000;
 }
@@ -91,8 +101,8 @@ body {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/websitephoto.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
-	top: 400px;
+	/*position: relative;
+	top: 400px;*/
 	z-index: 50;
 }
 
@@ -100,9 +110,9 @@ body {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/blackking.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
+	/*position: relative;
 	left: 300px;
-	z-index: 40;
+	z-index: 40;*/
 
 }
 
@@ -110,7 +120,7 @@ body {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/man.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
+	/*position: relative;*/
 	z-index: 30;	
 }
 
@@ -118,8 +128,17 @@ body {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/stairs.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
+	/*position: relative;
 	left: 300px;
-	bottom: 400px;
+	bottom: 400px;*/
 	z-index: 20;
+}
+
+.issueDiv {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
