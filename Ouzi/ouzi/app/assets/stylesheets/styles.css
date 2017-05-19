@@ -16,10 +16,10 @@ body {
 .originalLogo {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/613grey.png");
 	display: block;
-    margin-left: 600px;
+    margin-left: 375px;
     margin-top: 120px;
-	height: 700px;
-	width: 700px;
+	height: 500px;
+	width: 500px;
 	position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -28,10 +28,10 @@ body {
 .menuOpenLogo {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/white1.png");
 	display: block;
-    margin-left: 600px;
+    margin-left: 375px;
     margin-top: 120px;
-	height: 700px;
-	width: 700px;
+	height: 500px;
+	width: 500px;
 	position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -218,6 +218,14 @@ body {
 }
 
 @media only screen and (min-width: 1326px) {
+	.originalLogo{
+		margin-left: 425px;
+	}
+
+	.menuOpenLogo {
+		margin-left: 425px;
+	}
+
 	.skrollr-group {
 		height: 80vh;
 	}
