@@ -64,15 +64,15 @@ body {
 }
 
 .magazineImage {
-	padding-top: 50px;
-	height: 425px;
-	width: 950px;
+	padding-top: 120px;
+	height: 5px;
+	width: 15px;
 }
 
 .issues {
 	background-color: white;
-	margin: 220px;
-	margin-top: 20px;
+	margin: 110px;
+	margin-top: 10px;
 	margin-bottom: none;
 }
 
@@ -132,8 +132,8 @@ body {
 }
 
 .issueDiv {
-	height: 400px;
-	width: 600px;
+	height: 300px;
+	width: 500px;
 	color: white;
 	font-size: 100px;
 	font-weight: bolder;
@@ -215,4 +215,10 @@ body {
     transform: scale(1.05);
     transform: rotateX(40deg);
   }
+}
+
+@media only screen and (min-width: 1326px) {
+	.skrollr-group {
+		height: 80vh;
+	}
 }
