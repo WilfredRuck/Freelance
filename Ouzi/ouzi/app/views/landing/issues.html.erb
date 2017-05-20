@@ -102,17 +102,21 @@
    $('#overlay').toggleClass('closed');
 
       if ($('#overlay').hasClass('open')){	//when menu is open
-        
+
         $("body").animate({
           backgroundColor: "#FFDF00"
         }, 500 );
+
+        $(".issueDiv").css("animation-play-state", "paused");
       }
 
       if ($('#overlay').hasClass('closed')){  //when menu is closed
-        
+
         $("body").animate({
           backgroundColor: "white"
         }, 500 );
+
+        $(".issueDiv").css("animation-play-state", "running");
   	  };
 
  });
