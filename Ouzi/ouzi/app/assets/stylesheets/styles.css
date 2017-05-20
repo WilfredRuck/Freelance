@@ -131,15 +131,6 @@ body {
 	bottom: 0;
 }
 
-.issueDiv {
-	height: 300px;
-	width: 500px;
-	color: white;
-	font-size: 100px;
-	font-weight: bolder;
-	text-shadow: 2px 2px #000000;
-	user-select: none;
-}
 
 .issue1 {
 	background-image: url("https://s3.amazonaws.com/uncoveredpictures/ouzi/weThemBoys.jpg");
@@ -171,13 +162,23 @@ body {
 	background-color: #EC1A53;;
 	/*z-index: 99;*/
 }
+
 .issueDiv {
+	height: 300px;
+	width: 400px;
+	color: white;
+	font-size: 100px;
+	font-weight: bolder;
+	text-shadow: 2px 2px #000000;
+	user-select: none;
+
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+
 	animation: 
     stretch
     10.5s
@@ -217,16 +218,26 @@ body {
   }
 }
 
-@media only screen and (min-width: 1326px) {
+@media only screen and (min-width: 1326px) { /*1633px*/
 	.originalLogo{
-		margin-left: 425px;
+		height: 600px;
+		width: 600px;
+		margin-left: 675px;
 	}
 
 	.menuOpenLogo {
-		margin-left: 425px;
+		height: 600px;
+		width: 600px;
+		margin-left: 675px;
 	}
 
 	.skrollr-group {
-		height: 80vh;
+		height: 70vh;
+	}
+
+	.issues {
+		margin: 400px;
+		margin-top: 50px;
+		margin-bottom: none;
 	}
 }
