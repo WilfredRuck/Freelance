@@ -255,3 +255,36 @@ body {
 		bottom: 760px;
 	}
 }
+
+
+@media only screen and (max-width: 415px) {
+	/*.originalLogo{
+		height: 600px;
+		width: 600px;
+		margin-left: 675px;
+		margin-top: 130px;
+	}
+
+	.menuOpenLogo {
+		height: 600px;
+		width: 600px;
+		margin-left: 675px;
+		margin-top: 130px;
+	}
+
+	.skrollr-group {
+		height: 70vh;
+	}
+
+	.issues {
+		margin: 400px;
+		margin-top: 50px;
+		margin-bottom: none;
+	}
+
+	.issuesMenu {
+		position:relative;
+		left: 410px;
+		bottom: 760px;
+	}*/
+}
