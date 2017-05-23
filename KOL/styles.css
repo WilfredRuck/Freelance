@@ -1,14 +1,24 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Vollkorn|Roboto|Raleway');
+
+html, body {
 	background-color: black;
-	margin: 0px;
+	margin: 0 auto;
+	font-family: 'Raleway', sans-serif;
+	margin-top: 23px;
 }
 
+.menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	opacity: .9;
+}
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 li {
@@ -24,9 +34,265 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #333;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: goldenrod;
+}
+
+#aboutMe {
+	background-color: white;
+	text-align: center;
+}
+
+#aboutMe #title {
+	padding-top: 80px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+#aboutMe #text {
+	margin: 150px;
+	margin-top: 20px;
+	padding-bottom: 40px;
+	font-weight: bolder;
+}
+
+
+
+.top {
+  	margin-bottom: 100px;
+}
+
+.bottom {
+	margin-bottom: 70px;
+}
+
+.sections {
+	overflow: hidden;
+}
+.section {
+	float: left;
+}
+
+.homeImage {
+	height: 500px;
+	width: 550px;
+	border: goldenrod solid 2px;
+}
+
+.sectionItem {
+	background-color: grey;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.first {
+	margin-left: 40px;
+}
+
+.second {
+	padding-left: 80px;
+}
+
+
+
+.subscribe {
+	background-color: white;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.subTitle {
+	font-family: Arial;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	font-size: 32px;
+	letter-spacing: 4px;
+}
+
+.subText {
+
+}
+
+.form {
+	font-size: 30px;
+	color: silver;
+	padding-left: 300px;
+	padding-right: 300px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 40px;
+	margin-top: 50px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1.5px;
+}
+
+.submitButton {
+	font-family: Arial;
+	background-color: goldenrod;
+	border: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-left: 38px;
+	padding-right: 38px;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	margin-bottom: 50px;
+}
+
+
+footer {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.footerText {
+	color: white;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-left: 65px;
+	display: inline;
+}
+
+.social img {
+	height: 50px;
+	width: 50px;
+}
+
+.social {
+	display: inline;
+	padding-left: 585px;
+}
+
+
+
+
+.donateHeader {
+	height: 75vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#donate {
+	background-color: white;
+	text-align: center;
+}
+
+#donate #title {
+	padding-top: 80px;
+	font-size: 30px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+}
+
+#donate #text {
+	margin: 150px;
+	margin-top: 20px;
+	padding-bottom: 40px;
+	font-weight: bolder;
+}
+
+.donate {
+	text-align: center;
+}
+
+#donateButton {
+	font-family: Arial;
+	background-color: goldenrod;
+	border: none;
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	margin-bottom: 150px;
+}
+
+
+
+
+.ministryHeader {
+	height: 75vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.minImage {
+	height: 310px;
+	width: 346px;
+	margin-bottom: 50px;
+	border: goldenrod solid 2px;
+}
+
+.left {
+	margin-left: 40px;
+}
+
+.middle {
+	margin-left: 68px;
+}
+
+.right {
+	margin-left: 68px;
+	margin-right: 30px;
+}
+
+#ministry {
+	background-color: white;
+	text-align: center;
+}
+
+#ministry #title {
+	padding-top: 80px;
+	font-size: 30px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+}
+
+#ministry #text {
+	margin: 150px;
+	margin-top: 20px;
+	padding-bottom: 80px;
+	font-weight: bolder;
+}
+
+
+
+
+#team {
+	background-color: white;
+	text-align: center;
+}
+
+#team #title {
+	padding-top: 80px;
+	font-size: 30px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+}
+
+#team #text {
+	margin: 150px;
+	margin-top: 20px;
+	padding-bottom: 80px;
+	font-weight: bolder;
+}
+
+.teamImage {
+	height: 310px;
+	width: 346px;
+	margin-bottom: 50px;
+	border: goldenrod solid 2px;
 }
