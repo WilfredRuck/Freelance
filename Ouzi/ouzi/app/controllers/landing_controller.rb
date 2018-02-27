@@ -8,5 +8,8 @@ class LandingController < ApplicationController
 
 	def issues
 	end
+
+	def contact
+	end
 	
 end

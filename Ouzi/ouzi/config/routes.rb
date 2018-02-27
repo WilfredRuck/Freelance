@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 	get "/book", to: "landing#book"
 
 	get "/issues", to: "landing#issues"
+
+	get "/contact", to: "landing#contact"
 	
 	resources :landing
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
