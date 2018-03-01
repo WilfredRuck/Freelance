@@ -16,6 +16,9 @@ class MessagesController < ApplicationController
     	end
 	end
 
+	def contact
+	end
+
 
 	private
 	def message_params
