@@ -211,6 +211,34 @@ body {
 	bottom: 665px;
 }
 
+.skinny-wrapper {
+	display: table;
+	margin: 0 auto;
+}
+
+.input {
+	padding-right: 150px;
+	padding-bottom: 10px;
+}
+
+.textarea {
+	padding-right: 142px;
+	padding-bottom: 50px;
+}
+
+.button {
+	background-color: #bad433;
+	border: 2px #bad433 solid;
+	color: black;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 302px;
+	border-radius: 0;
+	outline: none;
+	margin-top: 10px;
+}
+
 @keyframes stretch {
   0% {
     transform: scale(1);

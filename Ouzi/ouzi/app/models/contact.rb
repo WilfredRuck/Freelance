@@ -4,9 +4,11 @@ class Contact < MailForm::Base
 	attribute :message, :validate => true
 	attribute :nickname, :captcha => true
 
-	def headers {
-		:subject => "Contact Form",
-		:to => "wilfredoruck@gmail.com",
-		:from => %("#{name}" <#{email}>)
-	}
+	def headers 
+		{
+			:subject => "Contact Form",
+			:to => "wilfredoruck@gmail.com",
+			:from => %("#{name}" <#{email}>)
+		}
+	end
 end
