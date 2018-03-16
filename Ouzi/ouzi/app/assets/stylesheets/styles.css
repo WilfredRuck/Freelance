@@ -241,6 +241,15 @@ body {
 	margin-top: 10px;
 }
 
+.button-issues {
+	background-color: #bad433;
+	border: 2px #bad433 solid;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-appearance: none;
+}
+
 .contact-container {
 	margin-top: 70px;
 }
