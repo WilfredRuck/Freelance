@@ -9,7 +9,7 @@
 <div class="overlay closed" id="overlay">
   <nav class="overlay-menu">
     <ul>
-      <li> <%= link_to 'READ', root_path, method: :get, :style=>'color:#EC1A53;' %> </li>
+      <li> <%= link_to 'HOME', root_path, method: :get, :style=>'color:#EC1A53;' %> </li> <!-- THIS IS ACTUALLY THE READ LINK -->
       <li> <a href="/">EVENTS</a> </li>
       
       <li> <%= link_to 'ARTISTS', issues_path, method: :get, :style=>'color:#EC1A53;' %> </li>
@@ -20,7 +20,7 @@
       <li> <%= link_to 'CONTACT', new_contact_path, method: :get, :style=>'color:#EC1A53;' %> </li>
 
       <li> <a href="/">VIDEOS</a> </li>
-      <li> <%= link_to 'MUSIC', book_path, method: :get, :style=>'color:#EC1A53;' %> </li>
+      <li> <%= link_to 'MUSIC', root_path, method: :get, :style=>'color:#EC1A53;' %> </li>
     </ul>
   </nav>
 </div>
