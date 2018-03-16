@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+	root "landing#home"
+	
 	get "/", to: "landing#home"
 
 	get "/book", to: "landing#book"
