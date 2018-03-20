@@ -171,6 +171,7 @@ body {
 	font-weight: bolder;
 	text-shadow: 2px 2px #000000;
 	user-select: none;
+	background-color: black;
 
 	display: flex;
 	flex-direction: row;
@@ -189,7 +190,7 @@ body {
     none
     running;
 	
-    transition: .5s;
+    transition: 2.5s;
 }
 
 .skrollr-group {
