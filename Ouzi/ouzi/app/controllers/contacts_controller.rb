@@ -3,6 +3,7 @@ class ContactsController < ApplicationController
 		@contact = Contact.new
 	end
 
+	# CREATE AND SEND MESSAGE THROUGH CONTACT FORM
 	def create
 		@contact = Contact.new(params[:contact])
 		@contact.request = request
