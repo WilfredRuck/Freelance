@@ -19,7 +19,8 @@
 		<%= f.text_area :message, as: :text, :class=>"textarea", required: true %>
 		
 		<br>
-
+		
+		<!-- PREVENT BOTS FROM SENDING MESSSAGES -->
 		<div class="hidden">
 			<%= f.label :nickname %> <br>
 			<%= f.text_field :nickname, hint: 'leave this field blank' %>
