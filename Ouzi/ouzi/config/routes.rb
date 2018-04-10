@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
 	get "/issues", to: "landing#issues"
 
+	get "/about", to: "landing#about"
+
 	resources :contacts, only: [:new,:create]
 	
 	resources :landing

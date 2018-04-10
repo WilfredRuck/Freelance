@@ -5,5 +5,8 @@ class LandingController < ApplicationController
 
 	def book
 	end
+
+	def about
+	end
 	
 end
